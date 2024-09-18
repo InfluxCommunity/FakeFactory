@@ -1,4 +1,4 @@
-# FakeFactory
+![Milk Tea Factory](milktea.jpeg)
 This is a work in progress as of September 18th.
 
 Include your own influxdb credentials add them to your own secret.py file. 
