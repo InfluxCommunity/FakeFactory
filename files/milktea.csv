@@ -1,0 +1,39 @@
+area_factory,equipment_manufacturer,equipment_name,equipment_type,equipment_uuid,line_name,line_uuid,site_name,site_uuid,tag_description,tag_name,tag_type,tag_unit,tag_uuid,time,value,work_center_type
+brewery,Siemens,Water Heater,Water Heater,uuid1WH,brew_line,uuid2L6K,tea_factory,uuid3Z4V,Water heating temperature,WATER_HEAT_TEMP,temperature,Celsius,uuid1,1717542000875,95,tea production
+brewery,Siemens,Water Heater,Water Heater,uuid1WH,brew_line,uuid2L6K,tea_factory,uuid3Z4V,Water pressure,WATER_PRESSURE,pressure,bars,uuid5,1717542000876,2,tea production
+brewery,Siemens,Water Heater,Water Heater,uuid1WH,brew_line,uuid2L6K,tea_factory,uuid3Z4V,Water flow rate,WATER_FLOW,flow,liters per hour,uuid6,1717542000877,150,tea production
+brewery,Siemens,Water Heater,Water Heater,uuid1WH,brew_line,uuid2L6K,tea_factory,uuid3Z4V,Water level rate,WATER_LEVEL,level,percentage,uuid63,1717542000877,25,tea production
+brewery,Koch,Tea Steeping Tank,Steeping Tank,uuid4ST,brew_line,uuid2L6K,tea_factory,uuid3Z4V,Steeping time,STEEP_TIME,time,minutes,uuid10,1717542000878,15,tea production
+brewery,Koch,Tea Steeping Tank,Steeping Tank,uuid4ST,brew_line,uuid2L6K,tea_factory,uuid3Z4V,Tea concentration,TEA_CONCENTRATION,density,grams per liter,uuid11,1717542000879,80,tea production
+brewery,Koch,Tea Steeping Tank,Steeping Tank,uuid4ST,brew_line,uuid2L6K,tea_factory,uuid3Z4V,PH concentration,PH_CONCENTRATION,pH,pH,,1717542000879,4,tea production
+brewery,Koch,Tea Steeping Tank,Steeping Tank,uuid4ST,brew_line,uuid2L6K,tea_factory,uuid3Z4V,Tea Tank Level,TEA_LEVEL,level,percentage of tank level,uuid11,1717542000879,90,tea production
+brewery,Siemens,Filtration Unit,Filtration Unit,uuid6FU,brew_line,uuid2L6K,tea_factory,uuid3Z4V,Filtration flow rate,FILTRATION_FLOW,flow,liters per hour,uuid15,1717542000880,200,tea production
+brewery,Siemens,Filtration Unit,Filtration Unit,uuid6FU,brew_line,uuid2L6K,tea_factory,uuid3Z4V,Filtration pressure,FILTRATION_PRESSURE,pressure,bars,uuid16,1717542000881,1.5,tea production
+milk processing,Siemens,Milk Homogenizer,Homogenizer,uuid8MH,milk_line,uuid18TT,tea_factory,uuid3Z4V,Homogenization pressure,HOMOG_PRESSURE,pressure,bars,uuid20,1717542000882,4.5,milk tea production
+milk processing,Siemens,Milk Homogenizer,Homogenizer,uuid8MH,milk_line,uuid18TT,tea_factory,uuid3Z4V,Homogenization speed,HOMOG_SPEED,speed,RPM,uuid21,1717542000883,3000,milk tea production
+milk processing,Siemens,Milk Homogenizer,Homogenizer,uuid8MH,milk_line,uuid18TT,tea_factory,uuid3Z4V,Homogenization temperature,HOMOG_TEMP,temperature,Celsius,uuid1,1717542000883,45,milk tea production
+milk processing,Siemens,Milk Separator,Separator,uuid10MS,milk_line,uuid18TT,tea_factory,uuid3Z4V,Separation speed,SEPARATION_SPEED,speed,RPM,uuid25,1717542000884,2500,milk tea production
+milk processing,Siemens,Milk Separator,Separator,uuid10MS,milk_line,uuid18TT,tea_factory,uuid3Z4V,Separation efficiency,SEPARATION_EFFICIENCY,efficiency,percent,uuid26,1717542000885,98,milk tea production
+milk processing,Siemens,Milk Separator,Separator,uuid10MS,milk_line,uuid18TT,tea_factory,uuid3Z4V,Separation vibration,SEPARATION_VIBRATION,vibration,mm/s,uuid26,1717542000885,1.5,milk tea production
+milk processing,Siemens,Milk Separator,Separator,uuid10MS,milk_line,uuid18TT,tea_factory,uuid3Z4V,Separation temperature,SEPARATION_TEMP,temperature,Celsius,uuid1,1717542000883,45,milk tea production
+mixing,Siemens,Agitator,Agitator,uuid12AG,mixing_line,uuid28HY,tea_factory,uuid3Z4V,Agitation speed,AGIT_SPEED,speed,RPM,uuid30,1717542000886,400,milk tea production
+mixing,Siemens,Agitator,Agitator,uuid12AG,mixing_line,uuid28HY,tea_factory,uuid3Z4V,Agitation power,AGIT_POWER,power,kilowatts,uuid31,1717542000887,5,milk tea production
+mixing,Siemens,Agitator,Agitator,uuid12AG,mixing_line,uuid28HY,tea_factory,uuid3Z4V,Agitation torque,AGIT_TORQUE,torque,Nm,uuid31,1717542000887,134,milk tea production
+mixing,Siemens,Agitator,Agitator,uuid12AG,mixing_line,uuid28HY,tea_factory,uuid3Z4V,Agitation temperature,AGIT_TEMP,temperature,Celsius,uuid1,1717542000875,95,milk tea production
+mixing,Siemens,Mixing Heater,Heater,uuid14MA,mixing_line,uuid28HY,tea_factory,uuid3Z4V,Mixing heater temperature,MIX_HEAT_TEMP,temperature,Celsius,uuid35,1717542000888,60,milk tea production
+mixing,Siemens,Mixing Heater,Heater,uuid14MA,mixing_line,uuid28HY,tea_factory,uuid3Z4V,Mixing heater power,MIX_HEAT_POWER,power,kilowatts,uuid36,1717542000889,10,milk tea production
+mixing,Siemens,Mixing Heater,Heater,uuid14MA,mixing_line,uuid28HY,tea_factory,uuid3Z4V,Mixing heater flow,MIX_HEAT_FLOW,flow,liters per hour,uuid15,1717542000880,200,milk tea production
+bottling,Crown,Bottle Capper,Capper,uuid16BC,bottle_line,uuid38VV,tea_factory,uuid3Z4V,Capping speed,CAPPING_SPEED,speed,bottles per minute,uuid40,1717542000890,180,milk tea bottling
+bottling,Crown,Bottle Capper,Capper,uuid16BC,bottle_line,uuid38VV,tea_factory,uuid3Z4V,Cap seal pressure,CAP_SEAL_PRESSURE,pressure,bars,uuid41,1717542000891,2.5,milk tea bottling
+bottling,Crown,Labeling Machine,Labeler,uuid18LM,bottle_line,uuid38VV,tea_factory,uuid3Z4V,Labeling speed,LABEL_SPEED,speed,bottles per minute,uuid45,1717542000892,200,milk tea bottling
+bottling,Crown,Labeling Machine,Labeler,uuid18LM,bottle_line,uuid38VV,tea_factory,uuid3Z4V,Label adhesive pressure,LABEL_PRESSURE,pressure,bars,uuid46,1717542000893,1.2,milk tea bottling
+bottling,Crown,Labeling Machine,Labeler,uuid18LM,bottle_line,uuid38VV,tea_factory,uuid3Z4V,Label adhesive position,LABEL_POSITION,position,mm,uuid46,1717542000893,0,milk tea bottling
+pasteurization,Siemens,Flash Pasteurizer,Flash Pasteurizer,uuid20FP,pasteur_line,uuid48BG,tea_factory,uuid3Z4V,Pasteurization flash temp,FLASH_PAST_TEMP,temperature,Celsius,uuid50,1717542000894,72,final product pasteurization
+pasteurization,Siemens,Flash Pasteurizer,Flash Pasteurizer,uuid20FP,pasteur_line,uuid48BG,tea_factory,uuid3Z4V,Pasteurization flash time,FLASH_PAST_TIME,time,seconds,uuid51,1717542000895,30,final product pasteurization
+pasteurization,Siemens,Cooling Tunnel,Cooling Tunnel,uuid22CT,pasteur_line,uuid48BG,tea_factory,uuid3Z4V,Tunnel cooling speed,COOL_TUN_SPEED,speed,bottles per minute,uuid55,1717542000896,150,final product pasteurization
+pasteurization,Siemens,Cooling Tunnel,Cooling Tunnel,uuid22CT,pasteur_line,uuid48BG,tea_factory,uuid3Z4V,Tunnel cooling temperature,COOL_TUN_TEMP,temperature,Celsius,uuid56,1717542000897,10,final product pasteurization
+pasteurization,Siemens,Cooling Tunnel,Cooling Tunnel,uuid22CT,pasteur_line,uuid48BG,tea_factory,uuid3Z4V,Tunnel cooling humidity,COOL_TUN_HUMID,humidity,percentage,uuid56,1717542000897,37,final product pasteurization
+cooling,Siemens,Chilling Unit,Chiller,uuid24CU,cooling_line,uuid58JL,tea_factory,uuid3Z4V,Chilling temperature,CHILL_TEMP,temperature,Celsius,uuid60,1717542000898,2,milk tea cooling
+cooling,Siemens,Chilling Unit,Chiller,uuid24CU,cooling_line,uuid58JL,tea_factory,uuid3Z4V,Chilling flow rate,CHILL_FLOW,flow,liters per hour,uuid61,1717542000899,500,milk tea cooling
+cooling,Siemens,Chilling Unit,Chiller,uuid24CU,cooling_line,uuid58JL,tea_factory,uuid3Z4V,Chilling pressure,CHILL_PRESSURE,pressure,bars,uuid62,1717542000900,3,milk tea cooling
+cooling,Siemens,Chilling Unit,Chiller,uuid24CU,cooling_line,uuid58JL,tea_factory,uuid3Z4V,Chilling power,CHILL_POWER,power,kilowatts,uuid36,1717542000889,10,milk tea cooling
