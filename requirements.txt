@@ -1,2 +1,3 @@
+Flask
 pandas
-influxdb-client-3
+influxdb3-python

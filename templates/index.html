@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milk Tea Factory Simulation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Beverage Factory Simulation</h1>
+    
+    <div>
+        <img src="{{ url_for('static', filename='images/factory_layout.png') }}" alt="Milk Tea Factory Layout" width="600">
+    </div>
+
+    <div>
+        <label for="machine-select">Select a Machine:</label>
+        <select id="machine-select">
+            <option value="Water Heater">Water Heater</option>
+            <option value="Tea Steeping Tank">Tea Steeping Tank</option>
+            <option value="Filtration Unit">Filtration Unit</option>
+            <option value="Milk Homogenizer">Milk Homogenizer</option>
+            <option value="Bottle Capper">Bottle Capper</option>
+        </select>
+
+        <label for="duration-select">Select Duration (minutes):</label>
+        <select id="duration-select">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+        </select>
+
+        <button onclick="simulateBreak()">Simulate Break</button>
+    </div>
+
+    <div>
+        <button onclick="startFactory()">Start Factory</button>
+        <button onclick="stopFactory()">Stop Factory</button>
+    </div>
+
+    <script>
+        function simulateBreak() {
+            const machine = document.getElementById('machine-select').value;
+            const duration = document.getElementById('duration-select').value; // Convert minutes to seconds
+
+            fetch('/simulate_break', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ machine, duration })
+            })
+            .then(response => response.json())
+            .then(data => alert(data.message))
+            .catch(error => console.error('Error:', error));
+        }
+
+        function startFactory() {
+            fetch('/start_factory', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => alert(data.message))
+            .catch(error => console.error('Error:', error));
+        }
+
+        function stopFactory() {
+            fetch('/stop_factory', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => alert(data.message))
+            .catch(error => console.error('Error:', error));
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+{
+    "dashboard": {
+      "id": null,
+      "title": "Milk Tea Factory Metrics",
+      "timezone": "browser",
+      "schemaVersion": 27,
+      "version": 1,
+      "refresh": "5s",
+      "panels": [
+        {
+          "type": "graph",
+          "title": "Temperature Monitoring",
+          "gridPos": { "x": 0, "y": 0, "w": 12, "h": 8 },
+          "targets": [
+            {
+              "refId": "A",
+              "datasource": {
+                "type": "influxdb",
+                "uid": "influxdb3"
+              },
+              "rawSql": "SELECT time, temperature FROM machine_data WHERE tag_name = 'WATER_HEAT_TEMP' ORDER BY time DESC LIMIT 100",
+              "format": "time_series"
+            }
+          ],
+          "fieldConfig": {
+            "defaults": {
+              "unit": "celsius"
+            }
+          }
+        },
+        {
+          "type": "graph",
+          "title": "Pressure Monitoring",
+          "gridPos": { "x": 12, "y": 0, "w": 12, "h": 8 },
+          "targets": [
+            {
+              "refId": "B",
+              "datasource": {
+                "type": "influxdb",
+                "uid": "influxdb3"
+              },
+              "rawSql": "SELECT time, pressure FROM machine_data WHERE tag_name = 'WATER_PRESSURE' ORDER BY time DESC LIMIT 100",
+              "format": "time_series"
+            }
+          ],
+          "fieldConfig": {
+            "defaults": {
+              "unit": "pressurebars"
+            }
+          }
+        },
+        {
+          "type": "graph",
+          "title": "Flow Rate Monitoring",
+          "gridPos": { "x": 0, "y": 8, "w": 12, "h": 8 },
+          "targets": [
+            {
+              "refId": "C",
+              "datasource": {
+                "type": "influxdb",
+                "uid": "influxdb3"
+              },
+              "rawSql": "SELECT time, flow FROM machine_data WHERE tag_name = 'WATER_FLOW' ORDER BY time DESC LIMIT 100",
+              "format": "time_series"
+            }
+          ],
+          "fieldConfig": {
+            "defaults": {
+              "unit": "litersperhour"
+            }
+          }
+        },
+        {
+          "type": "graph",
+          "title": "pH Levels",
+          "gridPos": { "x": 12, "y": 8, "w": 12, "h": 8 },
+          "targets": [
+            {
+              "refId": "D",
+              "datasource": {
+                "type": "influxdb",
+                "uid": "influxdb3"
+              },
+              "rawSql": "SELECT time, pH FROM machine_data WHERE tag_name = 'PH_CONCENTRATION' ORDER BY time DESC LIMIT 100",
+              "format": "time_series"
+            }
+          ],
+          "fieldConfig": {
+            "defaults": {
+              "unit": "none"
+            }
+          }
+        },
+        {
+          "type": "graph",
+          "title": "Vibration Monitoring",
+          "gridPos": { "x": 0, "y": 16, "w": 12, "h": 8 },
+          "targets": [
+            {
+              "refId": "E",
+              "datasource": {
+                "type": "influxdb",
+                "uid": "influxdb3"
+              },
+              "rawSql": "SELECT time, vibration FROM machine_data WHERE tag_name = 'SEPARATION_VIBRATION' ORDER BY time DESC LIMIT 100",
+              "format": "time_series"
+            }
+          ],
+          "fieldConfig": {
+            "defaults": {
+              "unit": "velocitymm/s"
+            }
+          }
+        },
+        {
+          "type": "graph",
+          "title": "Machine Efficiency",
+          "gridPos": { "x": 12, "y": 16, "w": 12, "h": 8 },
+          "targets": [
+            {
+              "refId": "F",
+              "datasource": {
+                "type": "influxdb",
+                "uid": "influxdb3"
+              },
+              "rawSql": "SELECT time, efficiency FROM machine_data WHERE tag_name = 'SEPARATION_EFFICIENCY' ORDER BY time DESC LIMIT 100",
+              "format": "time_series"
+            }
+          ],
+          "fieldConfig": {
+            "defaults": {
+              "unit": "percent"
+            }
+          }
+        }
+      ]
+    }
+  }
+  

@@ -2,7 +2,9 @@
 This is a work in progress as of September 18th.
 
 Include your own influxdb credentials add them to your own secret.py file. 
-To run, install the requirements.txt file then run the python FakeData.py file. 
+To run, install the requirements.txt file then run the python FakeData.py file.
+command  python3 FakeData.py
+From there you can go to the localhost where the flask server is running. It has start factory, which will produce normal data. Then a dropdown for machines to send broken data.
 
 
 Ideal Values:
